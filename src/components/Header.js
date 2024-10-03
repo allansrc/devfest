@@ -1,12 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import styled from 'styled-components';
 
-// Wrapper para o header
 const HeaderWrapper = styled.header`
   position: fixed;
   top: 0;
   left: 0;
-  right: 0;
   width: 100%;
   z-index: 1000;
 `;
@@ -59,14 +57,6 @@ const Nav = styled.nav`
   }
 `;
 
-const ImageSection = styled.div`
-  width: 100%;
-  height: 400px;
-  background: url('https://via.placeholder.com/1500x400') no-repeat center center;
-  background-size: cover;
-  margin-top: 80px;
-`;
-
 const MenuNavSection = styled.div`
   margin-right: 80px;
 `;
@@ -104,9 +94,6 @@ const Header = () => {
           </Nav>
         </MenuNavSection>
       </Topbar>
-
-      {/* Imagem de fundo */}
-      <ImageSection />
     </HeaderWrapper>
   );
 };
